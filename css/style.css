@@ -20,7 +20,7 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #000;
   color: #000;
 }
 
@@ -36,4 +36,140 @@ img {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* MAIN-CONTENT */
+.main-content {
+  flex-grow: 1;
+}
+
+.account {
+  position: relative;
+  top: 20px;
+  max-width: 800px;
+  width: 100%;
+  padding: 30px 30px 30px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: yellow;
+}
+
+.accaunt-settings-account-close-button-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.account-settings {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.account-close-button {
+  padding: 7px 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.account-close-button-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/close-button.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info-wrapper {
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  padding: 40px 20px;
+  flex-direction: column;
+  width: 800px;
+  background-color: #fff;
+  box-shadow: 0 5px 20px;
+}
+
+.user-img {
+  position: absolute;
+  top: -30px;
+  left: 40px;
+  border-radius: 50%;
+}
+
+.first-name-last-name-wrapper {
+  display: flex;
+}
+
+.first-name-last-name-wrapper:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.label-input-wrapper {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  margin-bottom: 20px;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+}
+
+.label-input-wrapper:first-child {
+  margin-right: 30%;
+}
+
+.label-input-2-1 {
+  display: flex;
+  flex-grow: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.label-input-2-1 .label-input-wrapper {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.label-input {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.input {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+#bio-input {
+  width: 100%;
+  height: 100vh;
+  max-height: 130px;
+  resize: vertical;
+  color: #999;
+}
+
+.user-buttons {
+  align-self: flex-end;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

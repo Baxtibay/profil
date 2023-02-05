@@ -13,39 +13,48 @@
 <body>
 
   <div class="main-content">
-    <div class="account">
-      <h1 class="account-settings">Account-settings</h1>
-      <form class="user-info">
-        <div class="user-info-wrapper">
-          <img src="" alt="" width="30" height="30">
-          <label>
-            Username
-            <input type="text" name="user-name" placeholder="Enter your username">
-          </label>
-          <hr>
-          <label>
-            Firstname
-            <input type="text" name="first-name" placeholder="Enter your first name">
-          </label>
-          <label>
-            Lastname
-            <input type="text" name="last-name" placeholder="Enter your last name">
-          </label>
-          <hr>
-          <label>
-            Email
-            <input type="text" name="last-name" placeholder="Enter your email">
-          </label>
-          <hr>
-          <label>
-            Bio
-            <textarea name="bio" id="" cols="30" rows="10"></textarea>
-          </label>
-          <hr>
+    <div class="container">
+      <div class="account">
+        <div class="accaunt-settings-account-close-button-wrapper">
+          <h1 class="account-settings">Account-settings</h1>
+          <button class="account-close-button">
+            <span class="account-close-button-icon"></span>
+          </button>
         </div>
-        <button type="button">Cancel</button>
-        <button type="button">Save</button>
-      </form>
+        <form class="user-info">
+          <div class="user-info-wrapper">
+            <img class="user-img" src="img/profil.jpg" alt="" width="60" height="60">
+            <div class="first-name-last-name-wrapper">
+              <div class="label-input-2-1">
+                <div class="label-input-wrapper">
+                  <label class="label-input" for="user-input">Username</label>
+                  <input id="user-input" class="input" type="text" name="user-name" placeholder="Enter your username">
+                </div>
+                <div class="label-input-wrapper">
+                  <label class="label-input" for="first-name-input">Firstname</label>
+                  <input id="first-name-input" class="input" type="text" name="first-name" placeholder="Enter your first name">
+                </div>
+              </div>
+            </div>
+            <div class="label-input-wrapper">
+              <label class="label-input" for="last-name-input">Lastname</label>
+              <input id="last-name-input" class="input" type="text" name="last-name" placeholder="Enter your last name">
+            </div>
+            <div class="label-input-wrapper">
+              <label class="label-input" for="email-input">Email</label>
+              <input id="email-input" class="input" type="text" name="last-name" placeholder="Enter your email">
+            </div>
+            <div class="label-input-wrapper">
+              <label class="label-input" for="bio-input">Bio</label>
+              <textarea id="bio-input" class="input" name="bio" placeholder="Tell us about yourself"></textarea>
+            </div>
+          </div>
+          <div class="user-buttons">
+            <button class="button" type="button">Cancel</button>
+            <button class="button" type="button">Save</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
