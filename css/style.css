@@ -44,7 +44,9 @@ img {
   flex-grow: 1;
 }
 
-.account {
+
+/* HEADER */
+.profile-settings {
   position: relative;
   top: 20px;
   max-width: 800px;
@@ -55,15 +57,38 @@ img {
   background-color: yellow;
 }
 
-.accaunt-settings-account-close-button-wrapper {
+.profile-settings-header {
   display: flex;
   align-items: start;
   justify-content: space-between;
 }
 
-.account-settings {
+.profile-settings-title {
   margin-top: 0;
   margin-bottom: 35px;
+}
+
+
+/* profile-settings-form-body */
+.profile-settings-form-body {
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  padding: 40px 20px;
+  flex-direction: column;
+  width: 800px;
+  background-color: #fff;
+  box-shadow: 0 5px 20px;
+}
+
+.profile-settings-form-group {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  margin-bottom: 20px;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
 }
 
 .account-close-button {
@@ -83,22 +108,6 @@ img {
   background-position: center center;
 }
 
-.user-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.user-info-wrapper {
-  margin-bottom: 30px;
-  position: relative;
-  display: flex;
-  padding: 40px 20px;
-  flex-direction: column;
-  width: 800px;
-  background-color: #fff;
-  box-shadow: 0 5px 20px;
-}
-
 .user-img {
   position: absolute;
   top: -30px;
@@ -114,45 +123,33 @@ img {
   margin-bottom: 20px;
 }
 
-.label-input-wrapper {
-  max-width: 800px;
-  width: 100%;
-  display: flex;
-  margin: 0;
-  margin-bottom: 20px;
-  flex-direction: column;
-  border-bottom: 1px solid #ccc;
-}
-
-.label-input-wrapper:first-child {
+.profile-settings-form-label-wrapper:first-child {
   margin-right: 30%;
 }
 
-.label-input-2-1 {
+.profile-settings-form-label-2-1 {
   display: flex;
   flex-grow: 1;
-  border-bottom: 1px solid #ccc;
 }
 
-.label-input-2-1 .label-input-wrapper {
+.profile-settings-form-label-2-1 .profile-settings-form-group {
   margin-bottom: 0;
-  border-bottom: none;
 }
 
-.label-input {
+.profile-settings-form-label {
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
   color: #999;
 }
 
-.input {
+.profile-settings-form-field {
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.input:focus {
+.profile-settings-form-field:focus {
   outline: none;
 }
 
@@ -164,8 +161,10 @@ img {
   color: #999;
 }
 
-.user-buttons {
-  align-self: flex-end;
+
+/* FOOTER */
+.profile-settings-form-action {
+  text-align: end;
 }
 
 .button {

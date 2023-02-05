@@ -14,45 +14,45 @@
 
   <div class="main-content">
     <div class="container">
-      <div class="account">
-        <div class="accaunt-settings-account-close-button-wrapper">
-          <h1 class="account-settings">Account-settings</h1>
-          <button class="account-close-button">
-            <span class="account-close-button-icon"></span>
-          </button>
-        </div>
-        <form class="user-info">
-          <div class="user-info-wrapper">
-            <img class="user-img" src="img/profil.jpg" alt="" width="60" height="60">
+      <div class="profile-settings">
+        <form action="" class="profile-settings-form">
+          <header class="profile-settings-header">
+            <h1 class="profile-settings-title">Account-settings</h1>
+            <a class="profile-settings-link" href="#">
+              <img src="img/close-button.svg" alt="close link" width="24" height="24">
+            </a>
+          </header>
+          <div class="profile-settings-form-body">
+            <img class="user-img" src="img/profil.jpg" alt="profile img" width="60" height="60">
             <div class="first-name-last-name-wrapper">
-              <div class="label-input-2-1">
-                <div class="label-input-wrapper">
-                  <label class="label-input" for="user-input">Username</label>
-                  <input id="user-input" class="input" type="text" name="user-name" placeholder="Enter your username">
+              <div class="profile-settings-form-label-2-1">
+                <div class="profile-settings-form-group">
+                  <label class="profile-settings-form-label" for="user-input">Username</label>
+                  <input id="user-input" class="profile-settings-form-field" type="text" name="user_name" placeholder="Enter your username">
                 </div>
-                <div class="label-input-wrapper">
-                  <label class="label-input" for="first-name-input">Firstname</label>
-                  <input id="first-name-input" class="input" type="text" name="first-name" placeholder="Enter your first name">
+                <div class="profile-settings-form-group">
+                  <label class="profile-settings-form-label" for="first-name-input">Firstname</label>
+                  <input id="first-name-input" class="profile-settings-form-field" type="text" name="first_name" placeholder="Enter your first name">
                 </div>
               </div>
             </div>
-            <div class="label-input-wrapper">
-              <label class="label-input" for="last-name-input">Lastname</label>
-              <input id="last-name-input" class="input" type="text" name="last-name" placeholder="Enter your last name">
+            <div class="profile-settings-form-group">
+              <label class="profile-settings-form-label" for="last-name-input">Lastname</label>
+              <input id="last-name-input" class="profile-settings-form-field" type="text" name="last_name" placeholder="Enter your last name">
             </div>
-            <div class="label-input-wrapper">
-              <label class="label-input" for="email-input">Email</label>
-              <input id="email-input" class="input" type="text" name="last-name" placeholder="Enter your email">
+            <div class="profile-settings-form-group">
+              <label class="profile-settings-form-label" for="email-input">Email</label>
+              <input id="email-input" class="profile-settings-form-field" type="email" name="email" placeholder="Enter your email">
             </div>
-            <div class="label-input-wrapper">
-              <label class="label-input" for="bio-input">Bio</label>
-              <textarea id="bio-input" class="input" name="bio" placeholder="Tell us about yourself"></textarea>
+            <div class="profile-settings-form-group">
+              <label class="profile-settings-form-label" for="bio-input">Bio</label>
+              <textarea id="bio-input" class="profile-settings-form-field" name="bio" placeholder="Tell us about yourself"></textarea>
             </div>
           </div>
-          <div class="user-buttons">
+          <footer class="profile-settings-form-action" class="user-buttons">
             <button class="button" type="button">Cancel</button>
             <button class="button" type="button">Save</button>
-          </div>
+          </footer>
         </form>
       </div>
     </div>
